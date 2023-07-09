@@ -1,0 +1,20 @@
+@mixin flex-wh-center($dir:row, $wrap: nowrap, $jc: center, $ai: center) {
+   display: flex;
+   flex-flow: $dir $wrap;
+   align-items: $ai;
+   justify-content: $jc;
+}
+
+@mixin flex-w-center($dir:row, $wrap: nowrap, $jc: center, $ai: normal) {
+   display: flex;
+   flex-flow: $dir $wrap;
+   align-items: $ai;
+   justify-content: $jc;
+}
+
+@mixin flex-h-center($dir:row, $wrap: nowrap, $jc: normal, $ai: center) {
+   display: flex;
+   flex-flow: $dir $wrap;
+   align-items: $ai;
+   justify-content: $jc;
+}

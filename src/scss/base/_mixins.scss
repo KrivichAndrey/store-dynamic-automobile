@@ -1,0 +1,20 @@
+@import "media-templates";
+
+@mixin focus($width: 4px, $offset: 2px, $radius: 1px, $color: #cb1400 ) {
+   &:focus {
+      outline: none;
+   }
+
+   &:focus-visible {
+      outline: $width solid $color;
+      outline-offset: $offset;
+      border-radius: $radius;
+   }
+}
+
+@mixin grid-layout($count: 12, $col-gap: 30px, $row-gap: 0) {
+   display: grid;
+   grid-template-columns: repeat($count, 1fr);
+   column-gap: $col-gap;
+   row-gap: $row-gap;
+}

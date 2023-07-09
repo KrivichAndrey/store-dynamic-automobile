@@ -1,0 +1,14 @@
+.git
+.vscode
+.idea
+gulp
+node_modules
+gulpfile.js
+.eslintignore
+.eslintrc
+.prettierrc.json
+.prettierignore
+.stylelintignore
+.stylelintrc.json
+package.json
+package-lock.json

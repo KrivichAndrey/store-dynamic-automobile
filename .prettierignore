@@ -1,0 +1,13 @@
+.idea
+node_modules
+**/*.js
+app/**/*.css
+src/*.html
+.eslintignore
+.eslintrc
+.prettierrc.json
+.prettierignore
+.stylelintignore
+.stylelintrc.json
+package.json
+package-lock.json
