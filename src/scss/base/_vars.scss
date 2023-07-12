@@ -14,8 +14,12 @@
    --header-black: #212121;
    --color-red: #dc4433;
    --button-hover-red: #cb1400;
-   --light-grey: #rgb(19, 18, 18);
+   --light-grey: #131212;
    --menu-dark-grey: #424242;
+
+   // ...
+   --main-text-color: var(--menu-dark-grey, #424242);
+   --focus-main-color: #cb2f00;
 
    // Sizes
 }

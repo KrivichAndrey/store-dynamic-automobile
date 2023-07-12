@@ -6,7 +6,7 @@
    padding: 0;
 }
 
-.btn_reset {
+.btn-reset {
    border: none;
    color: inherit;
    background-color: transparent;
@@ -16,6 +16,14 @@
 input[type="submit"],
 input[type="reset"],
 input[type="button"] {
+   cursor: pointer;
+}
+
+button {
+   border: none;
+   font: inherit;
+   color: inherit;
+   background-color: transparent;
    cursor: pointer;
 }
 
@@ -79,10 +87,7 @@ body {
    font-family: var(--font-family);
    font-size: var(--font-size);
    line-height: var(--line-height);
-
-   &.lock {
-      overflow: hidden;
-   }
+   color: var(--main-text-color);
 }
 
 .page__wrapper {
