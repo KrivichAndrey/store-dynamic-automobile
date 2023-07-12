@@ -1,84 +1,104 @@
 <header class="header">
    <div class="header__top-line">
       <div class="container">
-         <div class="header__top-line-inner">
-            <div>
-               <svg><use href="./img/svg/sprite.svg#ic-watch"></use></svg>
-               Работаем ежедневно с 9:00 до 21:00
+         <div class="header__top-inner">
+            <div class="header__top-item header-top-item">
+               <span class="header-top-item__icon">
+                  <svg><use href="./img/svg/sprite.svg#ic-watch"></use></svg>
+               </span>
+               <span class="header-top-item__text header-top-item__text--fw400">
+                  Работаем ежедневно с 9:00 до 21:00
+               </span>
             </div>
-            <a href="tel:88007777777">
-               <svg><use href="./img/svg/sprite.svg#ic-phone"></use></svg>
-               8 800 777-77-77
-               <span>(Звонок по России бесплатный)</span>
+            <a class="header__top-item header-top-item" href="tel:88007777777">
+               <span class="header-top-item__icon">
+                  <svg><use href="./img/svg/sprite.svg#ic-phone"></use></svg>
+               </span>
+               <span class="header-top-item__text">8 800 777-77-77</span>
+               <span
+                  class="header-top-item__text header-top-item__text--small header-top-item__text--fw400 header-top-item__text--ml">
+                  (Звонок по России бесплатный )
+               </span>
             </a>
-            <button>
-               <svg><use href="./img/svg/sprite.svg#ic-search"></use></svg>
-               Поиск
+            <button class="header__top-item header-top-item">
+               <span class="header-top-item__icon">
+                  <svg><use href="./img/svg/sprite.svg#ic-search"></use></svg>
+               </span>
+               <span class="header-top-item__text">Поиск</span>
             </button>
-            <button data-hover="second">Обратный звонок</button>
+            <button class="header-top-item header__top-item header__top-item--hover-color">
+               <span class="header-top-item__text">Обратный звонок</span>
+            </button>
          </div>
       </div>
    </div>
 
    <div class="header__bottom-line">
-      <div class="container header__bottom-container">
-         <a class="logo header__logo" href="/">
-            <img src="@img/logo.png" alt="Логотип Авто-Динамика" />
-         </a>
-         <nav class="header__main-menu main-menu main-menu--js">
-            <ul class="main-menu__list">
-               <li>
-                  <a href="#">
-                     Новые автомобили
-                     <span>
-                        <svg><use href="./img/svg/sprite.svg#ic-drop-down-arrow"></use></svg>
-                     </span>
-                  </a>
-               </li>
-               <li>
-                  <a href="#">
-                     С пробегом
-                     <span>
-                        <svg><use href="./img/svg/sprite.svg#ic-drop-down-arrow"></use></svg>
-                     </span>
-                  </a>
-               </li>
-               <li>
-                  <a href="#">
-                     Такси в кредит
-                     <span>
-                        <svg><use href="./img/svg/sprite.svg#ic-drop-down-arrow"></use></svg>
-                     </span>
-                  </a>
-               </li>
-               <li>
-                  <a href="#">Автокредит</a>
-               </li>
-               <li>
-                  <a href="#">
-                     Услуги
-                     <span>
-                        <svg><use href="./img/svg/sprite.svg#ic-drop-down-arrow"></use></svg>
-                     </span>
-                  </a>
-               </li>
-               <li>
-                  <a href="#">
-                     О компании
-                     <span>
-                        <svg><use href="./img/svg/sprite.svg#ic-drop-down-arrow"></use></svg>
-                     </span>
-                  </a>
-               </li>
-               <li>
-                  <a href="#">Контакты</a>
-               </li>
-            </ul>
-         </nav>
-
-         <button class="burger-btn header__burger-btn">
-            <span class="burger-btn__line"></span>
-         </button>
+      <div class="container">
+         <div class="header__bottom-inner">
+            <a class="logo header__logo" href="/">
+               <img src="@img/logo.png" alt="логотип Авто Динамика" />
+            </a>
+            <nav class="main-menu header__main-menu">
+               <ul class="main-menu__list">
+                  <li>
+                     <a class="main-menu__link" href="#">
+                        <span class="main-menu__link-text">Новые автомобили</span>
+                        <span class="main-menu__link-icon">
+                           <svg><use href="./img/svg/sprite.svg#ic-drop-down-arrow"></use></svg>
+                        </span>
+                     </a>
+                  </li>
+                  <li>
+                     <a class="main-menu__link" href="#">
+                        <span class="main-menu__link-text">С пробегом</span>
+                        <span class="main-menu__link-icon">
+                           <svg><use href="./img/svg/sprite.svg#ic-drop-down-arrow"></use></svg>
+                        </span>
+                     </a>
+                  </li>
+                  <li>
+                     <a class="main-menu__link" href="#">
+                        <span class="main-menu__link-text">Такси в кредит</span>
+                        <span class="main-menu__link-icon">
+                           <svg><use href="./img/svg/sprite.svg#ic-drop-down-arrow"></use></svg>
+                        </span>
+                     </a>
+                  </li>
+                  <li>
+                     <a class="main-menu__link" href="#">
+                        <span class="main-menu__link-text">Автокредит</span>
+                     </a>
+                  </li>
+                  <li>
+                     <a class="main-menu__link" href="#">
+                        <span class="main-menu__link-text">Услуги</span>
+                        <span class="main-menu__link-icon">
+                           <svg><use href="./img/svg/sprite.svg#ic-drop-down-arrow"></use></svg>
+                        </span>
+                     </a>
+                  </li>
+                  <li>
+                     <a class="main-menu__link" href="#">
+                        <span class="main-menu__link-text">О компании</span>
+                        <span class="main-menu__link-icon">
+                           <svg><use href="./img/svg/sprite.svg#ic-drop-down-arrow"></use></svg>
+                        </span>
+                     </a>
+                  </li>
+                  <li>
+                     <a class="main-menu__link" href="#">
+                        <span class="main-menu__link-text">Контакты</span>
+                     </a>
+                  </li>
+               </ul>
+            </nav>
+            <button class="burger header__burger">
+               <span class="burger__icon">
+                  <span class="burger__line"></span>
+               </span>
+            </button>
+         </div>
       </div>
    </div>
 </header>
