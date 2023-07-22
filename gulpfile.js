@@ -15,9 +15,9 @@ const svgSprite = require("gulp-svg-sprite");
 // const fs = require('fs');
 const del = require("del");
 const gcmq = require('gulp-group-css-media-queries');
-const webpack = require("webpack");
-const webpackStream = require("webpack-stream");
-const uglify = require("gulp-uglify-es").default;
+// const webpack = require("webpack");
+// const webpackStream = require("webpack-stream");
+// const uglify = require("gulp-uglify-es").default;
 const replace = require("gulp-replace");
 
 /*const fonts = () => {

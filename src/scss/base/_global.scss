@@ -6,6 +6,17 @@
    padding: 0;
 }
 
+* {
+   &:focus {
+      outline: none;
+   }
+
+   &:focus-visible {
+      outline: 4px solid var(--focus-main-color);
+      outline-offset: 2px;
+   }
+}
+
 .btn-reset {
    border: none;
    color: inherit;
@@ -115,5 +126,23 @@ body {
 
    @media (max-width: 360px) {
       --container-max-width: 300px;
+   }
+}
+
+.grid-layout {
+   display: grid;
+   grid-template-columns: repeat(12, 1fr);
+   column-gap: 30px;
+
+   @media (max-width: 1258px) {
+      column-gap: 20px;
+   }
+
+   @media (max-width: 834px) {
+      grid-template-columns: repeat(6, 1fr);
+   }
+
+   @media (max-width: 360px) {
+      grid-template-columns: repeat(4, 1fr);
    }
 }
