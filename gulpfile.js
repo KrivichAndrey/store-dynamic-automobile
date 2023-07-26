@@ -15,9 +15,9 @@ const svgSprite = require("gulp-svg-sprite");
 // const fs = require('fs');
 const del = require("del");
 const gcmq = require('gulp-group-css-media-queries');
-// const webpack = require("webpack");
-// const webpackStream = require("webpack-stream");
-// const uglify = require("gulp-uglify-es").default;
+const webpack = require("webpack");
+const webpackStream = require("webpack-stream");
+const uglify = require("gulp-uglify-es").default;
 const replace = require("gulp-replace");
 
 /*const fonts = () => {
@@ -117,7 +117,7 @@ const clean = () => {
 };
 
 const scripts = () => {
-   /*   return src('./src/js/main.js')
+     return src('./src/js/main.js')
        .pipe(webpackStream({
          mode: 'development',
          output: {
@@ -144,11 +144,11 @@ const scripts = () => {
        .pipe(uglify().on("error", notify.onError()))
        .pipe(sourcemaps.write("."))
        .pipe(dest("./app/js"))
-       .pipe(browserSync.stream()); */
+       .pipe(browserSync.stream());
 
-   return src("./src/js/**/*.js")
-      .pipe(dest("./app/js/"))
-      .pipe(browserSync.stream());
+   // return src("./src/js/**/*.js")
+   //    .pipe(dest("./app/js/"))
+   //    .pipe(browserSync.stream());
 };
 
 const watchFiles = () => {

@@ -111,6 +111,16 @@ body {
    flex-grow: 1;
 }
 
+.visually-hidden {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 0;
+   height: 0;
+   visibility: hidden;
+   pointer-events: none;
+}
+
 .container {
    max-width: calc(var(--container-max-width) + 2 * var(--container-safety-indents));
    margin: 0 auto;

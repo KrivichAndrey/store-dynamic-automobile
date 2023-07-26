@@ -1,0 +1,19 @@
+.btn {
+   border-radius: 4px;
+   font-weight: 500;
+   font-size: 16px;
+   transition: background-color 0.17s ease;
+}
+
+.btn--primary {
+   color: var(--color-white, #fff);
+   background-color: var(--color-red, #dc4433);
+
+   &:hover {
+      background-color: var(--button-hover-red, #cb1400);
+   }
+}
+
+.btn--dark {
+   background-color: var(--menu-black, #000);
+}

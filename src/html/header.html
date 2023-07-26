@@ -40,66 +40,39 @@
       <div class="container">
          <div class="header__bottom-inner">
             <a class="logo header__logo" href="/">
-               <img alt="логотип Авто Динамика" src="@img/logo.png" />
+               <img src="@img/logo.png" alt="логотип Авто Динамика" />
             </a>
 
-            <nav class="main-menu header__main-menu">
-               <ul class="main-menu__list">
+            <nav class="header__main-menu">
+               <ul>
                   <li>
-                     <a class="main-menu__link" href="#">
-                        <span class="main-menu__link-text">Новые автомобили</span>
-                        <span class="main-menu__link-icon">
-                           <svg><use href="./img/svg/sprite.svg#ic-drop-down-arrow"></use></svg>
-                        </span>
-                     </a>
+                     <a href="#">Новые автомобили</a>
+                     @@include('catalog.html',{})
                   </li>
+                  <li><a href="#">С пробегом</a></li>
+                  <li><a href="#">Такси в кредит</a></li>
+                  <li><a href="#">Автокредит</a></li>
                   <li>
-                     <a class="main-menu__link" href="#">
-                        <span class="main-menu__link-text">С пробегом</span>
-                        <span class="main-menu__link-icon">
-                           <svg><use href="./img/svg/sprite.svg#ic-drop-down-arrow"></use></svg>
-                        </span>
-                     </a>
+                     <a href="#"> Услуги </a>
+                     <ul>
+                        <li><a href="#">Автокредитование</a></li>
+                        <li><a href="#">Регистрация в ГИБДД</a></li>
+                        <li><a href="#">Корпоративным клиентам</a></li>
+                        <li><a href="#">Тест-драйв</a></li>
+                        <li><a href="#">Лизинг</a></li>
+                        <li><a href="#">Автострахование</a></li>
+                     </ul>
                   </li>
-                  <li>
-                     <a class="main-menu__link" href="#">
-                        <span class="main-menu__link-text">Такси в кредит</span>
-                        <span class="main-menu__link-icon">
-                           <svg><use href="./img/svg/sprite.svg#ic-drop-down-arrow"></use></svg>
-                        </span>
-                     </a>
-                  </li>
-                  <li>
-                     <a class="main-menu__link" href="#">
-                        <span class="main-menu__link-text">Автокредит</span>
-                     </a>
-                  </li>
-                  <li>
-                     <a class="main-menu__link" href="#">
-                        <span class="main-menu__link-text">Услуги</span>
-                        <span class="main-menu__link-icon">
-                           <svg><use href="./img/svg/sprite.svg#ic-drop-down-arrow"></use></svg>
-                        </span>
-                     </a>
-                  </li>
-                  <li>
-                     <a class="main-menu__link" href="#">
-                        <span class="main-menu__link-text">О компании</span>
-                        <span class="main-menu__link-icon">
-                           <svg><use href="./img/svg/sprite.svg#ic-drop-down-arrow"></use></svg>
-                        </span>
-                     </a>
-                  </li>
-                  <li>
-                     <a class="main-menu__link" href="#">
-                        <span class="main-menu__link-text">Контакты</span>
-                     </a>
-                  </li>
+
+                  <li><a href="#">О компании</a></li>
+                  <li><a href="#">Контакты</a></li>
                </ul>
             </nav>
 
             <button class="burger header__burger">
-               <span class="burger__icon"> <span class="burger__line"></span> </span>
+               <span class="burger__icon">
+                  <span class="burger__line"></span>
+               </span>
             </button>
          </div>
       </div>
